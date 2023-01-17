@@ -1,0 +1,168 @@
+extends _layout
+
+block vars
+	- array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'HOME'}
+block content_block
+	section.hero 
+		.section_in
+			.hero_main
+				.hero_content
+					h1 Технический центр по ремонту <br> Audi, Volkswagen, Skoda, Seat, Porsche
+					p Честный и профессиональный автосервис. <br> Мы не боимся давать гарантию 12 месяцев на свои работы и запчасти!
+				.hero_form 
+					ul 
+						li 		
+							.hero_form_btn
+								button(type='button') Оставить заявку
+						li
+							.hero_form_w
+								a(href="#")
+									+icon('whatsapp')
+				.hero_bottom 
+					ul 
+						li 
+							p 10
+							span лет <br> на рынке
+						li
+							p 12
+							span месяцев <br> гарантии
+						li 
+							p <5000
+							span довольных <br> клиентов
+	section.services
+		.section_in 
+			.services_main_w 
+				.services_head 
+					h2 Наши услуги
+				.services_list 
+					ul
+						-for(i = 0; i < 6; i++)
+							li 
+								.services_item_img 
+									img(src="i/galery/services1.png", alt="")
+								.services_item_content
+									.services_item_txt 
+										h3 Техническое обслуживание
+										span от 5 000 руб.
+									.services_btn_group 
+										.services_btn_order
+											button(type=button) Заказать
+										.services_btn_link 
+											a(href="#") WhatsApp
+				.services_btn 
+					button(type=button) Показать больше
+	section.advantages
+		.section_in 
+			.advantages_main 
+				.advantages_content 
+					.advantages_head 
+						h2 Наши преимущества:
+					.advantages_list_W 
+						ul   
+							li
+								.advantages_item_number
+									h2 01
+								.advantages_item_txt
+									p Подбор запчастей
+									span Мы оперативно выполним подбор и доставку запчастей для вашего автомобиля. Многое есть в наличии у нас на складе. Большинство деталей мы сможем доставить в течение дня.
+							li
+								.advantages_item_number 
+									h2 02
+								.advantages_item_txt
+									p Грамотные специалисты
+									span Грамотные специалисты правильно подберут необходимые детали и проконсультируют вас о целесообразности использования аналогов-заменителей.
+							li 
+								.advantages_item_number
+									h2 03
+								.advantages_item_txt
+									p Качественные запчасти
+									span Мы продаем запчасти оригинального производства и качественные аналоги-заменители производства Германии, Щвеции, Дании, Японии, Англии, Италии по ценам в 2-3 раза ниже оригинальных.
+	section.company 
+		.section_in
+			.company_main 
+				.company_content 
+					h2 О компании ВАГ сервис
+					h4 Наша cтанция технического обслуживания специализируется на ремонте, техническом обслуживании и сервисе автомобилей Ауди, Фольксваген и Шкода.
+					.company_txt_w 
+						p Наличие оригинальной технической документации Audi, Volkswagen и Skoda, а также специнструмента и опыта работы позволяют нам производить точную диагностику и качественный ремонт.
+						p Опытные, сертифицированные специалисты, которые впитали в себя лучший опыт дилерского обучения, прошлых лет, (сейчас так не учат) внимательно выслушают Вас, вникнут в суть Вашей проблемы и в кратчайшие сроки устранят возникшие неисправности автомобиля. Все специалисты автоцентра — профессионалы, которые любят свою работу.
+						p Мы поможем сократить Ваши расходы по ремонту автомобиля путем точного определения вышедшей из строя детали. Мы даем Вам возможность выбора между оригинальными или неоригинальными качественными запчастями.
+				.company_img
+					img(src="i/galery/master.png", alt="")
+	section.certificate
+		.section_in 
+			.certificate_main_w 
+				.certificate_head 
+					h3 Наши сертификаты
+				.certificate_main
+					.certificate_galery 
+						ul 
+							li
+								a(href="i/certificate/certificate1.png" data-fancybox)  
+									img(src="i/certificate/certificate1.png", alt="")
+							li 
+								a(href="i/certificate/certificate2.png" data-fancybox) 
+									img(src="i/certificate/certificate2.png", alt="")
+					.certificate_content 
+						h4 Мы сертифицировали наш сервис по услугам и получили сертификат, выполнив требования по составу оборудования и квалификации механиков.
+						ul
+							li - Регламентные работы по техническому обслуживанию;
+							li - Контрольно диагностические работы;
+							li - Электротехнические работы на автомобиле;
+							li - Регулировка тормозной системы;
+							li - Замена агрегатов;
+							li - Ремонт двигателей;
+							li - Ремонт КПП;
+							li - Ремонт рулевого управления и подвески;
+							li - Ремонт тормозной системы;
+							li - Ремонт сцепления.
+	section.contact 
+		.section_in 
+			.contact_main_w
+					.contact_head 
+						h3 Контакты
+					.contact_main
+						.contact_list 
+							ul 
+								li 
+									.contact_phone 
+										a(href="#")
+											.contact_phone_icon
+												+icon('call')
+											p +7 (928) 750-31-11
+								li 
+									.contact_phone 
+										a(href="#")
+											.contact_phone_icon
+												+icon('call')
+											p +7 (863) 226-26-40
+								li 
+									.contact_mail 
+										a(href="#")
+											.contact_mail_icon 
+												+icon('envelope')
+											p service-vag.com@yandex.ru
+								li 
+									.contact_adsress
+										a(href="#")
+											.contact_address_icon 
+												+icon('mapmark')
+											p Ростов-на-Дону, ул. 45 Линия 20
+								li 
+									.contact_operating 
+										a(href="#")
+											.contact_operating_icon 
+												+icon('clock')
+											p Пн - Пт: 09:30 - 18:00, Сб: 10:00 - 18:00
+							.contact_social
+								ul 
+									li
+										.contact_social_wh
+											a(href="#")
+													+icon('whatsapp')
+									li 
+										.contact_social_vk
+											a(href="#")
+												+icon('vk')
+						.contact_map
+							<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9cd4f7fb41aab68869ae652d379d5a952056b34281f8fa9dc50438026c899876&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
