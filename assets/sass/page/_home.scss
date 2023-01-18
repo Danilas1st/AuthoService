@@ -354,9 +354,29 @@
 		height: 100%;
 		background: url('../../i/bg2.png') no-repeat center / cover;
 		z-index: -1;
+		@include bp($point_2) {
+			display: none;
+		}
+		@include bp($point_5) {
+			display: none;
+		}
 	}
 }
 .advantages_main {
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $black;
+		opacity: .9;
+		z-index: -1;
+		display: none;
+		@include bp($point_2) {
+			display: block;
+		}
+	}
 	padding: 10rem 0 16.7rem 0;
 	@include bp($point_2) {
 		padding: 8rem 0;
@@ -374,7 +394,7 @@
 .advantages_head {
 	margin-bottom: 6rem;
 	@include bp($point_2) {
-		margin-bottom: 5rem;
+		margin: 5rem 0;
 		h2 {
 			font-size: 3rem;
 		}
@@ -382,7 +402,7 @@
 	@include bp($point_5) {
 		h2 {
 			font-size: 2.5rem;
-			margin-bottom: 5rem;
+			margin: 5rem 0;
 		}
 	}
 	h2 {
