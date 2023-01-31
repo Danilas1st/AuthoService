@@ -1,0 +1,45 @@
+section.contacts 
+	.section_in 
+		.contacts_main_w 
+			.contacts_head 
+				h1 Контакты
+				ul 
+					li 
+						a(href="#")  Главная
+					li 
+						p Контакты
+		.contacts_main_top 
+			.contacts_map 
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0cffe600d654b040af3b28f26034b8f76d12cfa4638a8b82b9ea9b946ddfcdc5&amp;width=813&amp;height=501&amp;lang=ru_RU&amp;scroll=true"></script>
+			.contacts_main_info 
+				ul
+					li 
+						.contacts_phone 
+							h3 Телефон
+							a(href="#")
+								p +7 (495) 823-54-12
+					li 
+						.contacts_mail 
+							h3 E-mail 
+							a(href="#")
+								p info@sitename.com
+					li 
+						.contact_addres 
+							h3 Адрес
+							p г. Москва, 3-я улица Строителей, 25
+		.contacts_main_bottom
+			h2 Напишите нам
+			.contacts_main_form 
+				form(action="").hero_form
+					.hero_form_input
+						input(type="text" placeholder="Имя")
+					.hero_form_input
+						input(type="mail" placeholder="E-mail")
+					.hero_form_input
+						input(type="tel" placeholder="Телефон")
+					.hero_form_input
+						input(type="text" placeholder="Сообщение")
+					.hero_form_btn 
+						button(type="submit") Отправить
+
+

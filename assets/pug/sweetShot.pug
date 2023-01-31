@@ -1,0 +1,55 @@
+section.sweet 
+	.section_in 
+		.sweet_head 
+			h1 Свитшот Sweet Shot
+			.aweet_shop_main 
+				ul 
+					li 
+						a(href="#") Главная
+					li
+						a(href="#") Свитшоты 
+					li 
+						p Свитшот Sweet Shot
+		.sweet_shop 
+			.sweet_shop_left 
+				img(src="i/galery/collection3.png ", alt="")
+			.sweet_shop_right
+				.shop_right_price 
+					p $311
+					span $450
+				.shop_right_size 
+					h3 Выберите размер
+					ul 
+						li 
+							p S 
+						li
+							p M 
+						li
+							p L
+						li
+							p XL 
+						li
+							p XXL
+				.shop_right_color 
+					h3 Выберите цвет
+					ul 
+						li 
+						li
+						li
+						li 
+				.shop_right_btn 
+					button(type='button') Добавить в корзину
+		.sweet_related
+			h2 Связанные товары
+			.related_list 
+				clothes_list 
+					ul
+						-for(i = 0; i < 3; i++)
+							li 
+								a(href="#") 
+									.collection_img 
+										img(src="i/galery/collection1.png", alt="")
+									.collection_txt 
+										h3 Футболка USA
+										p $129
+		

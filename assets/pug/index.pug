@@ -7,162 +7,120 @@ block content_block
 		.section_in
 			.hero_main
 				.hero_content
-					h1 Технический центр по ремонту <br> Audi, Volkswagen, Skoda, Seat, Porsche
-					p Честный и профессиональный автосервис. <br> Мы не боимся давать гарантию 12 месяцев на свои работы и запчасти!
-				.hero_form 
-					ul 
-						li 		
-							.hero_form_btn
-								button(type='button') Оставить заявку
-						li
-							.hero_form_w
-								a(href="#")
-									+icon('whatsapp')
-				.hero_bottom 
-					ul 
-						li 
-							p 10
-							span лет <br> на рынке
-						li
-							p 12
-							span месяцев <br> гарантии
-						li 
-							p <5000
-							span довольных <br> клиентов
-	section.services
-		.section_in 
-			.services_main_w 
-				.services_head 
-					h2 Наши услуги
-				.services_list 
-					ul
-						-for(i = 0; i < 6; i++)
-							li 
-								.services_item_img 
-									img(src="i/galery/services1.png", alt="")
-								.services_item_content
-									.services_item_txt 
-										h3 Техническое обслуживание
-										span от 5 000 руб.
-									.services_btn_group 
-										.services_btn_order
-											button(type=button) Заказать
-										.services_btn_link 
-											a(href="#") WhatsApp
-				.services_btn 
-					button(type=button) Показать больше
-	section.advantages
-		.section_in 
-			.advantages_main 
-				.advantages_content 
-					.advantages_head 
-						h2 Наши преимущества:
-					.advantages_list_W 
-						ul   
-							li
-								.advantages_item_number
-									h2 01
-								.advantages_item_txt
-									p Подбор запчастей
-									span Мы оперативно выполним подбор и доставку запчастей для вашего автомобиля. Многое есть в наличии у нас на складе. Большинство деталей мы сможем доставить в течение дня.
-							li
-								.advantages_item_number 
-									h2 02
-								.advantages_item_txt
-									p Грамотные специалисты
-									span Грамотные специалисты правильно подберут необходимые детали и проконсультируют вас о целесообразности использования аналогов-заменителей.
-							li 
-								.advantages_item_number
-									h2 03
-								.advantages_item_txt
-									p Качественные запчасти
-									span Мы продаем запчасти оригинального производства и качественные аналоги-заменители производства Германии, Щвеции, Дании, Японии, Англии, Италии по ценам в 2-3 раза ниже оригинальных.
-	section.company 
-		.section_in
-			.company_main 
-				.company_content 
-					h2 О компании ВАГ сервис
-					h4 Наша cтанция технического обслуживания специализируется на ремонте, техническом обслуживании и сервисе автомобилей Ауди, Фольксваген и Шкода.
-					.company_txt_w 
-						p Наличие оригинальной технической документации Audi, Volkswagen и Skoda, а также специнструмента и опыта работы позволяют нам производить точную диагностику и качественный ремонт.
-						p Опытные, сертифицированные специалисты, которые впитали в себя лучший опыт дилерского обучения, прошлых лет, (сейчас так не учат) внимательно выслушают Вас, вникнут в суть Вашей проблемы и в кратчайшие сроки устранят возникшие неисправности автомобиля. Все специалисты автоцентра — профессионалы, которые любят свою работу.
-						p Мы поможем сократить Ваши расходы по ремонту автомобиля путем точного определения вышедшей из строя детали. Мы даем Вам возможность выбора между оригинальными или неоригинальными качественными запчастями.
-				.company_img
-					img(src="i/galery/master.png", alt="")
-	section.certificate
-		.section_in 
-			.certificate_main_w 
-				.certificate_head 
-					h3 Наши сертификаты
-				.certificate_main
-					.certificate_galery 
-						ul 
-							li
-								a(href="i/certificate/certificate1.png" data-fancybox)  
-									img(src="i/certificate/certificate1.png", alt="")
-							li 
-								a(href="i/certificate/certificate2.png" data-fancybox) 
-									img(src="i/certificate/certificate2.png", alt="")
-					.certificate_content 
-						h4 Мы сертифицировали наш сервис по услугам и получили сертификат, выполнив требования по составу оборудования и квалификации механиков.
-						ul
-							li - Регламентные работы по техническому обслуживанию;
-							li - Контрольно диагностические работы;
-							li - Электротехнические работы на автомобиле;
-							li - Регулировка тормозной системы;
-							li - Замена агрегатов;
-							li - Ремонт двигателей;
-							li - Ремонт КПП;
-							li - Ремонт рулевого управления и подвески;
-							li - Ремонт тормозной системы;
-							li - Ремонт сцепления.
-	section.contact 
-		.section_in 
-			.contact_main_w
-					.contact_head 
-						h3 Контакты
-					.contact_main
-						.contact_list 
+					.hero_col_left 
+						.hero_slider_w
+							.hero_slider.swiper 
+								.swiper-wrapper
+									.swiper-slide 
+										.hero_slide 
+											h1 Новые поступления в этом сезоне
+											p Утонченные сочетания и бархатные оттенки - вот то, что вы искали в этом сезоне. Время исследовать.
+										.slide_btn 
+											a(href="#") Открыть магазин
+									.swiper-slide 
+										.hero_slide
+											h1 Что-то новенькое. Мы заждались тебя.
+											p Надоело искать себя в сером городе? Настало время новых идей, свежих красок и вдохновения с Womazing!
+										.slide_btn 
+											a(href="#") Открыть магазин
+									.swiper-slide 
+										.hero_slide
+											h1 Включай новый сезон с WOMAZING
+											p Мы обновили ассортимент - легендарные коллекции и новинки от отечественных дизайнеров
+										.slide_btn 
+											a(href="#") Открыть магазин
+					.hero_col_right 
+						.right_galery 
 							ul 
 								li 
-									.contact_phone 
-										a(href="#")
-											.contact_phone_icon
-												+icon('call')
-											p +7 (928) 750-31-11
+									.galery_first
+										img(src="i/galery/foto1.png", alt="")
 								li 
-									.contact_phone 
-										a(href="#")
-											.contact_phone_icon
-												+icon('call')
-											p +7 (863) 226-26-40
-								li 
-									.contact_mail 
-										a(href="#")
-											.contact_mail_icon 
-												+icon('envelope')
-											p service-vag.com@yandex.ru
-								li 
-									.contact_adsress
-										a(href="#")
-											.contact_address_icon 
-												+icon('mapmark')
-											p Ростов-на-Дону, ул. 45 Линия 20
-								li 
-									.contact_operating 
-										a(href="#")
-											.contact_operating_icon 
-												+icon('clock')
-											p Пн - Пт: 09:30 - 18:00, Сб: 10:00 - 18:00
-							.contact_social
-								ul 
-									li
-										.contact_social_wh
-											a(href="#")
-													+icon('whatsapp')
-									li 
-										.contact_social_vk
-											a(href="#")
-												+icon('vk')
-						.contact_map
-							<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9cd4f7fb41aab68869ae652d379d5a952056b34281f8fa9dc50438026c899876&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+									.galery_second 
+										img(src="i/galery/foto2.png", alt="")
+								li
+									.galery_third  
+										img(src="i/galery/foto3.png", alt="")
+	section.collection 
+		.section_in 
+			.collection_main_w 
+				h2 Новая коллекция
+				.collection_main
+					ul 
+						li 
+							a(href="#") 
+								.collection_img 
+									img(src="i/galery/collection1.png", alt="")
+								.collection_txt 
+									h3 Футболка USA
+									p $229
+									span $129
+						li
+							a(href="#") 
+								.collection_img 
+									img(src="i/galery/collection2.png", alt="")
+								.collection_txt 
+									h3 Купальник Glow
+									span $129
+						li 
+							a(href="#")
+								.collection_img 
+									img(src="i/galery/collection3.png", alt="")
+								.collection_txt 
+									h3 Свитшот Sweet Shot
+									span $129
+				.collection_main_btn 
+					a(href="#")  Открыть магазин
+	section.important 
+		.section_in 
+			.important_main
+				.important_head 
+					h2 Что для нас важно
+				.important_content 
+					ul 
+						li 
+							.content_icon 
+								img(src="i/sprite/quality.svg", alt="")
+							.content_txt 
+								h3 Качество
+								p Наши профессионалы работают на лучшем оборудовании для пошива одежды беспрецедентного качества
+						li
+							.content_icon 
+								img(src="i/sprite/gear.svg", alt="")
+							.content_txt 
+								h3 Скорость
+								p Благодаря отлаженной системе в Womazing мы можем отшивать до 20-ти единиц продукции в наших собственных цехах
+						li
+							.content_icon 
+								img(src="i/sprite/hand.svg", alt="")
+							.content_txt 
+								h3 Ответственность
+								p Мы заботимся о людях и планете. Безотходное производство и комфортные условия труда - все это Womazing
+	section.team 
+		.section_in 
+			.team_main 
+				.team_col_left 
+					.team_slider_w
+						.team_slider.swiper 
+							.swiper-wrapper
+								.swiper-slide 
+									.team_slide
+										img(src="i/galery/team1.png", alt="")
+								.swiper-slide 
+									.team_slide
+										img(src="i/galery/team2.png", alt="") 
+								.swiper-slide 
+									.team_slide
+										img(src="i/galery/team3.png", alt="")  
+							.team_slider_nav
+								.team_slider_btn.previews 
+									button(type="button")
+										+icon('previews')
+								.works_slider_btn.next 
+									button(type="button")
+										+icon('next')
+				.team_col_righ 
+					h3 Для каждой
+					p Каждая девушка уникальна. Однако, мы схожи в миллионе мелочей. 
+					<br> Womazing ищет эти мелочи и создает прекрасные вещи, которые выгодно подчеркивают достоинства каждой девушки.
+					a(href="#") Подробнее о бренде

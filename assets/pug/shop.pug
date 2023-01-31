@@ -1,0 +1,49 @@
+section.shop
+	.section_in 
+		.shop_head
+			h1 Магазин
+			.shop_main 
+				ul 
+					li 
+						a(href="#") Главная
+					li
+						p Магазин
+section.clothes
+	.section_in 
+		.clothes_main 
+			.clothes_menu 
+				ul 
+					li
+						a(href="#") Все
+					li
+						a(href="#") Пальто
+					li
+						a(href="#")  Свитшоты
+					li
+						a(href="#")  Кардиганы
+					li 
+						a(href="#")  Толстовки
+			.clothes_shown 
+				p Показано: 9 из 12 товаров
+			.clothes_shop 
+				.clothes_list 
+					ul
+						-for(i = 0; i < 12; i++)
+							li 
+								a(href="#") 
+									.collection_img 
+										img(src="i/galery/collection1.png", alt="")
+									.collection_txt 
+										h3 Футболка USA
+										p $229
+										span $129
+			.clothes_shown 
+				p Показано: 9 из 12 товаров
+			.clothes_page 
+				ul 
+					Li 
+						a(href="#") 
+							p 1 
+					Li 
+						a(href="#") 
+							p 2

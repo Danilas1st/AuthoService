@@ -139,21 +139,21 @@ function popup(popups, btn) {
 
 
 
-function opens(popupQuery) {
-	document.querySelector(popupQuery).classList.add('active')
-}
+// function opens(popupQuery) {
+// 	document.querySelector(popupQuery).classList.add('active')
+// }
 
-function burgerMobile() {
-	const triggerBurger = document.querySelector('.burger_trigger')
-	const burgerPopup = document.querySelector('.burger')
-	const burgerFail = document.querySelectorAll('.close_burger')
+// function burgerMobile() {
+// 	const triggerBurger = document.querySelector('.burger_trigger')
+// 	const burgerPopup = document.querySelector('.burger')
+// 	const burgerFail = document.querySelectorAll('.close_burger')
 
-	triggerBurger.addEventListener('click', (e) => {
-		burgerPopup.classList.add('active')
-		if(e.target.classList.contains('burger_trigger')) {
-			e.target.classList.add('active')
-		}
-	})
+// 	triggerBurger.addEventListener('click', (e) => {
+// 		burgerPopup.classList.add('active')
+// 		if(e.target.classList.contains('burger_trigger')) {
+// 			e.target.classList.add('active')
+// 		}
+// 	})
 
 	// Array.from(burgerFail).map((item) => {
 	// 	item.addEventListener('click', () => {
@@ -172,64 +172,4 @@ function burgerMobile() {
 	});
 
 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// }
